@@ -78,7 +78,7 @@ If this set of sequence were to arise in the AA_to_NT_generator.py, the generate
 
 *Rule 3:* Palindromic sequences will be rejected. If checked in the NT_checker.py script, a warning will be printed onto the terminal. For AA_to_NT_generator.py, the generated palindromic NT sequence will not be considered and a new set of AA compatible NT sequences will be checked.
 
-*Palindromic sequence:* 
+Palindromic sequence:
 
 3'- AGCT -5', which in reverse complement, is: <br>
 3'- AGCT -5'
