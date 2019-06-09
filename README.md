@@ -31,7 +31,7 @@ For example, lets compare two 3' to 5' sequences:
 Rule 1: check nucleotide for nucleotide directly comparing NT matches in the 3' to 5' direction. Note: we are not comparing complementary similarity. No more than two matches are allowed. Two offset comparisons are employed, as well. If any of these conditions show greater than two matches, the sequence (in its entirity) will be deemed void.
 
 A) 3'- AGCG -5'<br>
-          |  |  |  |<br>
+               |  |  |  |<br>
      3'- TGCG -5'<br>
      3 of 4 NT match - no good [FAIL]
 
