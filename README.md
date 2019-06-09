@@ -1,7 +1,3 @@
-# Golden-Gate-cloning-junction-sequence-checker-and-generator
-A python tool to check and generate compatible junction sequences for Golden Gate cloning.
-Please read the following README to understand the how-to use and general principles of this toolset.
-
 readme for github gg cloning project
 
 This is a two-tool program that 1) searches if the provided 4nt sequence (i.e. type iis re that leaves a 4nt overhang sequence) is compatible with one another in an in-silico cloning design and 2) creates a set of compatible 4nt overhang sequence dependent on a sequence of 2AA sequences provided. The latter is useful for generating compatible 4nt sequences for junction sequences that one desires to dictate the AA used in the junction sites.
@@ -34,38 +30,38 @@ For example, lets compare two 3' to 5' sequences:
 
 Rule 1: check nucleotide for nucleotide directly comparing NT matches in the 3' to 5' direction. Note: we are not comparing complementary similarity. No more than two matches are allowed. Two offset comparisons are employed, as well. If any of these conditions show greater than two matches, the sequence (in its entirity) will be deemed void.
 
-A) 3'- AGCG -5'<br>
-       ||||<br>
-   3'- TGCG -5'<br>
-   3 of 4 NT match - no good [FAIL]
+A) 3'- AGCG -5'
+          |  |  |  |
+     3'- TGCG -5'
+     3 of 4 NT match - no good [FAIL]
 
 B) 3'- AGCG -5'
-        |||
-    3'- TGCG -5'
-   0 of 4 NT match - good
+             |  |  |
+     3'-    TGCG -5'
+     0 of 4 NT match - good
 
-C)  3'- AGCG -5'
-        |||
-   3'- TGCG -5'
-   0 of 4 NT match - good
+C) 3'-    AGCG -5'
+             |  |  |
+     3'- TGCG    -5'
+     0 of 4 NT match - good
 
 
 Rule 2: Similar to rule 1, compare NT to NT comparison as is, however, convert the second sequence in comparison to a reverse complement. Aside from this caveat, all conditions are identical to Rule 1.
 
 A) 3'- AGCG -5'
-       ||||
-   3'- CGCA -5'
-   2 of 4 NT match - good
+          |  |  |  |
+     3'- CGCA -5'
+     2 of 4 NT match - good
 
 B) 3'- AGCG -5'
-        |||
-    3'- CGCA -5'
-   0 of 4 NT match - good
+             |  |  |
+     3'-    CGCA -5'
+     0 of 4 NT match - good
 
-C) 3'- AGCG -5'
-        |||
-    3'- CGCA -5'
-   0 of 4 NT match - good
+C) 3'-    AGCG -5'
+             |  |  |
+     3'- CGCA    -5'
+     0 of 4 NT match - good
 
 For this example, Rule 2 did not fail, but Rule 1 did. If this was checked in the NT_checker.py script, a warning would be printed on the terminal stating Rule 1 was violated. 
 If this set of sequence were to arise in the AA_to_NT_generator.py, the generated NT sequence will not be considered, and a new set of AA compatible NT sequences will be checked.
@@ -78,4 +74,3 @@ Palindromic sequence:
 3'- AGCT -5'
 
 This is the summary for now.
-
