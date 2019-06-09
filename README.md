@@ -15,23 +15,23 @@ This program is taylored for [Type IIS restriction enzyme](https://www.thermofis
 
 Download or copy the code into your favorite text editor. Please check the directories assigned to variables csv_dir and json_dir written in this program; these is the only variables that must be modified to successfully run the code. There is a directory for your CSV, JSON, and python file. Please set var csv_dir and json_dir to your CSV and JSON directories, respectively.
 
-* *CSV:* * Please format your CSV as the following. <br>
+* *CSV:* Please format your CSV as the following. <br>
 - The column headers is not case sensitive, however col 1 must be names 'NT sequence' (for NT_checker.py script) and col 2 must be named 'AA sequence' (for AA_to_NT_generator.py script). 
 - In your CSV file, each row corrensponds to individual sequences (whether NT or AA) that is to be checked. 
     - Please list all NT sequences in column one. The case is not sensitive, but make sure to write a 4nt sequence per row. At least two rows are required, or an exception will be thrown.
     - For the AA column, please write your AA sequence as two single-letter AA code. Two and only two AA sequence must be written per row. The cells are not case sensitive. More than two rows are required to run the program, or an execption will be thrown. (please reference figure below)
 
-* *JSON:* * Please download the JSON file 'gg_ntdict.json.' Do not change the name of this file or an exception will be thrown. However, if you are inclined to change the name of this file, you are welcome to do so. Please make sure to change every instance to the file in the program to your new name. Store this file appropriately in your JSON directory.
+* *JSON:* Please download the JSON file 'gg_ntdict.json.' Do not change the name of this file or an exception will be thrown. However, if you are inclined to change the name of this file, you are welcome to do so. Please make sure to change every instance to the file in the program to your new name. Store this file appropriately in your JSON directory.
 
-* *Running the program:* * Please run the program in your terminal. Change directories to your script(s)' location. Run AA_to_NT_generator.py script by typing 'python AA_to_NT_generator.py' in your terminal. Run NT_checker.py script by typing 'python NT_checker.py' in your terminal.
+* *Running the program:* Please run the program in your terminal. Change directories to your script(s)' location. Run AA_to_NT_generator.py script by typing 'python AA_to_NT_generator.py' in your terminal. Run NT_checker.py script by typing 'python NT_checker.py' in your terminal.
 
 * *NT_checker.py:* * This script will look at content in col1 (where only NT sequences are listed). A detailed result will print onto your terminal. If the NT sequence fails, reasons for failure will be outlined on the terminal. 
 
-* *AA_to_NT_generator.py:* * This script will look at content in col2 (where only AA sequences are listed). A load bar and script status will be printed onto your terminal. If the script completed successfully, you will find a summary .csv file written to your CSV directory called '"input file name"_results.csv.' Please look at this file for reference when working with your successful NT sequences generated from the input AA sequences (please reference figure below).
+* *AA_to_NT_generator.py:* This script will look at content in col2 (where only AA sequences are listed). A load bar and script status will be printed onto your terminal. If the script completed successfully, you will find a summary .csv file written to your CSV directory called '"input file name"_results.csv.' Please look at this file for reference when working with your successful NT sequences generated from the input AA sequences (please reference figure below).
 
 The beauty of the AA_to_NT_generator.py script is its memoization. Whether the AA sequence checks were successful or a failure, the JSON file will append these results to an expanding dictionary. When initianting the script, the script will first check the JSON file for the input AA sequences, i.e. it will never check the same two AA sequence set twice. The more the script is run with different AA combinations, the more elaborate your dictionary becomes.
 
-* *Criteria for Selection* *
+* *Criteria for Selection* 
 
 For example, lets compare two 3' to 5' sequences:
 1) AGCG
@@ -78,7 +78,7 @@ If this set of sequence were to arise in the AA_to_NT_generator.py, the generate
 
 Rule 3: Palindromic sequences will be rejected. If checked in the NT_checker.py script, a warning will be printed onto the terminal. For AA_to_NT_generator.py, the generated palindromic NT sequence will not be considered and a new set of AA compatible NT sequences will be checked.
 
-* *Palindromic sequence:* *
+* *Palindromic sequence:* 
 
 3'- AGCT -5', which in reverse complement, is: <br>
 3'- AGCT -5'
