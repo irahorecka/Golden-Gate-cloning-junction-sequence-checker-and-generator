@@ -38,7 +38,7 @@ For example, lets compare two 3' to 5' sequences:
 2) TGCG
 
 
-Rule 1: check nucleotide for nucleotide directly comparing NT matches in the 3' to 5' direction. Note: we are not comparing complementary similarity. No more than two matches are allowed. Two offset comparisons are employed, as well. If any of these conditions show greater than two matches, the sequence (in its entirity) will be deemed void.
+*Rule 1:* check nucleotide for nucleotide directly comparing NT matches in the 3' to 5' direction. Note: we are not comparing complementary similarity. No more than two matches are allowed. Two offset comparisons are employed, as well. If any of these conditions show greater than two matches, the sequence (in its entirity) will be deemed void.
 
 A) 3'- AGCG -5'<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  |  |  |<br>
@@ -56,7 +56,7 @@ C) 3'-    AGCG -5'<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
 
 
-Rule 2: Similar to rule 1, compare NT to NT comparison as is, however, convert the second sequence in comparison to a reverse complement. Aside from this caveat, all conditions are identical to Rule 1.
+*Rule 2:* Similar to rule 1, compare NT to NT comparison as is, however, convert the second sequence in comparison to a reverse complement. Aside from this caveat, all conditions are identical to Rule 1.
 
 A) 3'- AGCG -5'<br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   |  |  |  |<br>
@@ -76,7 +76,7 @@ C) 3'-    AGCG -5'<br>
 For this example, Rule 2 did not fail, but Rule 1 did. If this was checked in the NT_checker.py script, a warning would be printed on the terminal stating Rule 1 was violated. 
 If this set of sequence were to arise in the AA_to_NT_generator.py, the generated NT sequence will not be considered, and a new set of AA compatible NT sequences will be checked.
 
-Rule 3: Palindromic sequences will be rejected. If checked in the NT_checker.py script, a warning will be printed onto the terminal. For AA_to_NT_generator.py, the generated palindromic NT sequence will not be considered and a new set of AA compatible NT sequences will be checked.
+*Rule 3:* Palindromic sequences will be rejected. If checked in the NT_checker.py script, a warning will be printed onto the terminal. For AA_to_NT_generator.py, the generated palindromic NT sequence will not be considered and a new set of AA compatible NT sequences will be checked.
 
 *Palindromic sequence:* 
 
