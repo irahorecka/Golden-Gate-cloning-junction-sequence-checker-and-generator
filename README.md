@@ -42,8 +42,8 @@ B) 3'- AGCG -5'<br>
 
 C) 3'-    AGCG -5'<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          |  |  |<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- TGCG    -5'<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- TGCG    -5'<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
 
 
 Rule 2: Similar to rule 1, compare NT to NT comparison as is, however, convert the second sequence in comparison to a reverse complement. Aside from this caveat, all conditions are identical to Rule 1.
