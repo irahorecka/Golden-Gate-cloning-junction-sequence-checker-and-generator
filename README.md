@@ -50,7 +50,7 @@ Rule 2: Similar to rule 1, compare NT to NT comparison as is, however, convert t
 
 A) 3'- AGCG -5'<br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   |  |  |  |<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA -5'<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA -5'<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 of 4 NT match - good<br>
 
 B) 3'- AGCG -5'<br>
