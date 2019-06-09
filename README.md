@@ -60,7 +60,7 @@ B) 3'- AGCG -5'<br>
 
 C) 3'-    AGCG -5'<br>
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     |  |  |<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA    -5'<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA    -5'<br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
 
 For this example, Rule 2 did not fail, but Rule 1 did. If this was checked in the NT_checker.py script, a warning would be printed on the terminal stating Rule 1 was violated. 
