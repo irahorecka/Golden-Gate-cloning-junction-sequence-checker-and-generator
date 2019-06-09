@@ -1,7 +1,9 @@
 #Uploaded to GitHub 2019-05-30
-#updated 2019-05-29
+#updated 2019-06-08
 import os.path
-os.chdir('/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/CSV')
+csv_dir = '/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/CSV'
+json_dir = '/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/JSON'
+os.chdir(csv_dir)
 import collections
 import csv
 import json
@@ -372,7 +374,7 @@ class Search:
                 self.search_prime(1)
                 self.scramble_list = self.compute.scrambler(self.codon_tot)
                 micro_test = seq_looker(self.scramble_list)
-                os.chdir('/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/JSON')
+                os.chdir(json_dir)
                 json_key = ''.join(self.aa_list).lower()
                 with open('gg_ntdict.json') as json_dict:
                     master_dict = json.load(json_dict)
@@ -415,7 +417,7 @@ class Search:
         return "ok"
 
     def execute_script(self):
-        os.chdir('/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/JSON')
+        os.chdir(json_dir)
         json_key = ''.join(self.aa_list).lower()
         results_list = list()
         with open('gg_ntdict.json') as json_dict:
@@ -432,7 +434,7 @@ class Search:
                             if self.scramble_list[i].upper() in key:
                                 results_list.append(f'{self.aa_list[i].upper()},{key},{self.scramble_list[i]}')
                                 break
-                    os.chdir('/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/CSV')
+                    os.chdir(csv_dir)
                     new_results_list = self.filename.csv_template(self.aa_list, self.scramble_list, results_list)
                     self.filename.csv_writer(new_results_list)
                     print('\nEstablished NT sequence:')
@@ -455,7 +457,7 @@ class Search:
                                 break
                     new_results_list = self.filename.csv_template(self.aa_list, self.scramble_list, results_list)
                     self.filename.csv_writer(new_results_list)
-        os.chdir('/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/JSON')
+        os.chdir(json_dir)
         if len(self.hit_dict) != 0:
             print(f'Operation time: {"%.2f" % self.delta_t} sec.')
             print(f'Number of sequence checks: {self.stop_check + self.micro_stop_check}\n')
