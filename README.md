@@ -1,11 +1,15 @@
-readme for github gg cloning project
+**README for Golden Gate Cloning Junction Sequence Checker and Generator**
 
-This is a two-tool program that 1) searches if the provided 4nt sequence (i.e. type iis re that leaves a 4nt overhang sequence) is compatible with one another in an in-silico cloning design and 2) creates a set of compatible 4nt overhang sequence dependent on a sequence of 2AA sequences provided. The latter is useful for generating compatible 4nt sequences for junction sequences that one desires to dictate the AA used in the junction sites.
+Please read the following article for a precis of [Golden Gate cloning](https://en.wikipedia.org/wiki/Golden_Gate_Cloning).
+
+This is a two-tool program that:
+1) Searches if the provided 4nt sequence (i.e. type iis re that leaves a 4nt overhang sequence) is compatible with one another in an in-silico cloning design.
+2) Creates a set of compatible 4nt overhang sequence dependent on a sequence of 2AA sequences provided. The latter is useful for generating compatible 4nt sequences for junction sequences that one desires to dictate the AA used in the junction sites.
 
 Below is a common list of type iis re that leaves a 4nt overhang sequence:
-BsaI
-BbsI
-BsmbI
+- BsaI
+- BbsI
+- BsmbI
 
 This program is taylored for type iis re that leaves a 4nt overhang sequence. There are plans on furthering the capability of this program by encompassing type iis re that leave 3nt overhang sequences and overhang sequences >4nt in length.
 
@@ -60,7 +64,7 @@ B) 3'- AGCG -5'<br>
 
 C) 3'-    AGCG -5'<br>
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     |  |  |<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA    -5'<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA    -5'<br>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
 
 For this example, Rule 2 did not fail, but Rule 1 did. If this was checked in the NT_checker.py script, a warning would be printed on the terminal stating Rule 1 was violated. 
