@@ -43,25 +43,25 @@ B) 3'- AGCG -5'<br>
 C) 3'-    AGCG -5'<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          |  |  |<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- TGCG    -5'<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
 
 
 Rule 2: Similar to rule 1, compare NT to NT comparison as is, however, convert the second sequence in comparison to a reverse complement. Aside from this caveat, all conditions are identical to Rule 1.
 
 A) 3'- AGCG -5'<br>
-          |  |  |  |<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA -5'<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   |  |  |  |<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA -5'<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 of 4 NT match - good<br>
 
 B) 3'- AGCG -5'<br>
-             |  |  |<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;3'-    CGCA -5'<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      |  |  |<br>
+      &nbsp;&nbsp;3'-    CGCA -5'<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
 
 C) 3'-    AGCG -5'<br>
-             |  |  |<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA    -5'<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     |  |  |<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- CGCA    -5'<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
 
 For this example, Rule 2 did not fail, but Rule 1 did. If this was checked in the NT_checker.py script, a warning would be printed on the terminal stating Rule 1 was violated. 
 If this set of sequence were to arise in the AA_to_NT_generator.py, the generated NT sequence will not be considered, and a new set of AA compatible NT sequences will be checked.
@@ -70,7 +70,7 @@ Rule 3: Palindromic sequences will be rejected. If checked in the NT_checker.py 
 
 Palindromic sequence:
 
-3'- AGCT -5', which in reverse complement, is:
+3'- AGCT -5', which in reverse complement, is: <br>
 3'- AGCT -5'
 
 This is the summary for now.
