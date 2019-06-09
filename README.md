@@ -41,8 +41,8 @@ B) 3'- AGCG -5'<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
 
 C) 3'-    AGCG -5'<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          |  |  |<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- TGCG    -5'<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          |  |  |<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3'- TGCG    -5'<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 of 4 NT match - good<br>
 
 
