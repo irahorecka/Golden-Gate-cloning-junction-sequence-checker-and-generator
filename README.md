@@ -33,15 +33,15 @@ Rule 1: check nucleotide for nucleotide directly comparing NT matches in the 3' 
 A) 3'- AGCG -5'<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  |  |  |<br>
     &nbsp;&nbsp;&nbsp;&nbsp; 3'- TGCG -5'<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 of 4 NT match - no good [FAIL]
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 of 4 NT match - no good [FAIL]
 
 B) 3'- AGCG -5'
-             |  |  |
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           |  |  |
      3'-    TGCG -5'
      0 of 4 NT match - good
 
 C) 3'-    AGCG -5'
-             |  |  |
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          |  |  |
      3'- TGCG    -5'
      0 of 4 NT match - good
 
