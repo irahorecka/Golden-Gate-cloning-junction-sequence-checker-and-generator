@@ -1,10 +1,9 @@
 NT sequence,AA sequence
-AGCG,gg
-TGCG,gs
-,gs
+AGCG,ag
+TGCG,tg
+ATTA,rr
+GTCT,ke
 ,gg
-,gg
-,aa
-,ag
-,th
-,ht
+,tr
+,ga
+,cc

@@ -2,7 +2,7 @@
 #A script to check junction site compatibility from a list of junction site sequences
 #start with what you know from your OSX computer
 import os.path
-base_dir = os.getcwd()
+base_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(f'{base_dir}/CSV')
 import csv
 import pandas as pd

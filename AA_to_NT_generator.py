@@ -1,7 +1,7 @@
 #Uploaded to GitHub 2019-05-30
 #updated 2019-06-08
 import os.path
-base_dir = os.getcwd()
+base_dir = os.path.dirname(os.path.abspath(__file__))
 csv_dir = f'{base_dir}/CSV'
 json_dir = f'{base_dir}/JSON'
 os.chdir(csv_dir)
