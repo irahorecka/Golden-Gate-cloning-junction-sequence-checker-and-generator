@@ -2,7 +2,8 @@
 #A script to check junction site compatibility from a list of junction site sequences
 #start with what you know from your OSX computer
 import os.path
-os.chdir('/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/CSV')
+base_dir = os.getcwd()
+os.chdir(f'{base_dir}/CSV')
 import csv
 import pandas as pd
 

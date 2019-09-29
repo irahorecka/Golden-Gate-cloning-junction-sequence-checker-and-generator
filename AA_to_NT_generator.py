@@ -1,8 +1,9 @@
 #Uploaded to GitHub 2019-05-30
 #updated 2019-06-08
 import os.path
-csv_dir = '/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/CSV'
-json_dir = '/Users/irahorecka/Desktop/Harddrive_Desktop/Python/GG Cloning/Junction Site Scripts/JSON'
+base_dir = os.getcwd()
+csv_dir = f'{base_dir}/CSV'
+json_dir = f'{base_dir}/JSON'
 os.chdir(csv_dir)
 import collections
 import csv
